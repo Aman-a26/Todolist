@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glow To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="todo-card">
+        <header class="hero">
+          <div>
+            <p class="eyebrow"> Day planner</p>
+            <h1>To-Do List</h1>
+          </div>
+          <div class="stats" id="stats">0 tasks</div>
+        </header>
+
+        <form class="task-form" id="task-form">
+          <input
+            id="task-input"
+            type="text"
+            placeholder="What needs your attention?"
+            maxlength="80"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Add task</button>
+        </form>
+
+        <ul class="task-list" id="task-list"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
